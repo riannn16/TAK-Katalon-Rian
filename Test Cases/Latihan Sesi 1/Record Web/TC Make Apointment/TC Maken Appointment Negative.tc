@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC Maken Appointment Negative</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>50f38dbd-ca3c-4d5b-9689-cb0a15d498bd</testCaseGuid>
+</TestCaseEntity>

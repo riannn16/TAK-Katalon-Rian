@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC Login Positive</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>cbe1153e-3544-40d7-90aa-57bdeddf766b</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>e749e1fa-49b1-45d1-95bf-1c5aa5844229</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Katalon Data/login-data</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>e749e1fa-49b1-45d1-95bf-1c5aa5844229</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>username</value>
+      <variableId>52cec7de-fce2-4f4e-b7a7-f84c49004761</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e749e1fa-49b1-45d1-95bf-1c5aa5844229</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>password</value>
+      <variableId>58aac6d1-649b-482c-96ec-4a5f389a0572</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'John Doe'</defaultValue>
+      <description></description>
+      <id>52cec7de-fce2-4f4e-b7a7-f84c49004761</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM'</defaultValue>
+      <description></description>
+      <id>58aac6d1-649b-482c-96ec-4a5f389a0572</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

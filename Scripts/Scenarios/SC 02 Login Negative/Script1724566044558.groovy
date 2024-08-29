@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Blocks/Open Browser'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Home/label_CURA Healthcare Service'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Home/label_CURA Healthcare Service'), 
     0)
 
 WebUI.callTestCase(findTestCase('Blocks/Login Negative'), [('username') : 'John Doe', ('password') : 'NhbHzDFXUPA='], FailureHandling.STOP_ON_FAILURE)

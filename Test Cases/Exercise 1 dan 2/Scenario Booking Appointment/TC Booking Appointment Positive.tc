@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC Booking Appointment Positive</name>
-   <tag></tag>
-   <comment></comment>
-   <recordOption>OTHER</recordOption>
-   <testCaseGuid>e7fed821-b0f7-4690-bb5f-c1b10d23a704</testCaseGuid>
-</TestCaseEntity>

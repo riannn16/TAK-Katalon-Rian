@@ -19,12 +19,12 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Blocks/Open Browser'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Home/label_CURA Healthcare Service'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Home/label_CURA Healthcare Service'), 
     0)
 
 WebUI.callTestCase(findTestCase('Blocks/Login Positive'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Login/label_make-appointment'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/label_make-appointment'), 
     0)
 
 WebUI.callTestCase(findTestCase('Blocks/Appointment Negative'), [:], FailureHandling.STOP_ON_FAILURE)

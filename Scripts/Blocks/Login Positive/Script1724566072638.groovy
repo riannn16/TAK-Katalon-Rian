@@ -17,21 +17,21 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Home/a_menu-toggle'))
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Home/a_menu-toggle'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Login/a_login'))
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/a_login'))
 
-WebUI.verifyElementPresent(findTestObject('Record Web Exercise 1 dan 2/Page_Login/label_login'), 0)
+WebUI.verifyElementPresent(findTestObject('Record Web Exercise 1 s.d 4/Page_Login/label_login'), 0)
 
-WebUI.setText(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Login/input_username'), username)
+WebUI.setText(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/input_username'), username)
 
-WebUI.setEncryptedText(findTestObject('Record Web Exercise 1 dan 2/Page_Login/input_password'), password)
+WebUI.setEncryptedText(findTestObject('Record Web Exercise 1 s.d 4/Page_Login/input_password'), password)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Login/button_login'))
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/button_login'))
 
 WebUI.delay(2)
 

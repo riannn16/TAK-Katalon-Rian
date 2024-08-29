@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FolderEntity>
    <description></description>
-   <name>Record Web Exercise 1 dan 2</name>
+   <name>Exercise 1 s.d 4</name>
    <tag></tag>
-   <folderType>WEBELEMENT</folderType>
+   <folderType>TESTCASE</folderType>
 </FolderEntity>

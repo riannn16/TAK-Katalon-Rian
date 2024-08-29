@@ -35,7 +35,7 @@ WebUI.verifyElementVisible(findTestObject('Spy Web Latihan 1/Login Page/lbl_logi
 
 WebUI.setText(findTestObject('Spy Web Latihan 1/Login Page/input_username'), 'John Doe')
 
-WebUI.setEncryptedText(findTestObject('null'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
+WebUI.setEncryptedText(findTestObject('Spy Web Latihan 1/Login Page/input_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
 
 WebUI.delay(2)
 

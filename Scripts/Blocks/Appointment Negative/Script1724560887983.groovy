@@ -17,16 +17,16 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.selectOptionByValue(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Booking-Appointment/dropdown_facility'), 
+WebUI.selectOptionByValue(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/dropdown_facility'), 
     'Hongkong CURA Healthcare Center', true)
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Booking-Appointment/checkbox_readmission'))
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/checkbox_readmission'))
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Booking-Appointment/radiobutton_medicare'))
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_medicare'))
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Booking-Appointment/textbox_visit-date'))
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/textbox_visit-date'))
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page_Booking-Appointment/button_book-appointment'))
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/button_book-appointment'))
 
 WebUI.delay(2)
 

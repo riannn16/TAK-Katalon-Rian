@@ -6,12 +6,12 @@
    <elementGuidId>e82a5ccc-a702-450e-9bb4-48c8950bf57a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>a.btn.btn-default</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//section[@id='summary']/div/div/div[7]/p/a</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>a.btn.btn-default</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

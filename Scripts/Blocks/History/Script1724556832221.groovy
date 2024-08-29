@@ -17,9 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Record Web Exercise 1 dan 2/Page_Home/a_menu-toggle'))
+WebUI.click(findTestObject('Record Web Exercise 1 s.d 4/Page_Home/a_menu-toggle'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Record Web Exercise 1 dan 2/Page_History/a_history'))
+WebUI.click(findTestObject('Record Web Exercise 1 s.d 4/Page_History/a_history'))
 

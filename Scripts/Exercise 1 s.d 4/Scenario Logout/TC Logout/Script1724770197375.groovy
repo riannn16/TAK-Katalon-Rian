@@ -17,9 +17,35 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.verifyElementPresent(findTestObject('Record Web Exercise 1 s.d 4/Page_Login/label_make-appointment'), 0)
+WebUI.openBrowser('')
 
-WebUI.verifyElementPresent(findTestObject('Record Web Exercise 1 s.d 4/Page_Booking-Appointment/dropdown_facility'), 0)
+WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
+
+WebUI.delay(2)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Home/label_CURA Healthcare Service'), 
+    0)
+
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Home/a_menu-toggle'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/a_login'))
+
+WebUI.verifyElementPresent(findTestObject('Record Web Exercise 1 s.d 4/Page_Login/label_login'), 0)
+
+WebUI.setText(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/input_username'), 'John Doe')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/input_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/button_login'))
+
+WebUI.delay(2)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/label_make-appointment'), 
+    0)
 
 WebUI.selectOptionByValue(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/dropdown_facility'), 
     'Hongkong CURA Healthcare Center', true)
@@ -39,17 +65,30 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/button_book-appointment'))
 
-WebUI.verifyElementPresent(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_appointment-confirmation'), 
+WebUI.delay(2)
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_appointment-confirmation'), 
     0)
 
-WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-facility'), 
-    'Hongkong CURA Healthcare Center')
+WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_yes_no'), 'Yes')
-
-WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-date'), '30/08/2024')
-
-WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-comment'), 'testing')
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Home/a_menu-toggle'))
 
 WebUI.delay(2)
+
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_History/a_history'))
+
+WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_History/label_history'), 0)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Record Web Exercise 1 s.d 4/Page_Home/a_menu-toggle'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Record Web Exercise 1 s.d 4/Page_Logout/a_logout'))
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
 

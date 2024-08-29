@@ -29,7 +29,7 @@ WebUI.click(findTestObject('null'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 dan 2/Page-Login/Login/a_Login'))
+WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page-Login/Login/a_Login'))
 
 WebUI.delay(2)
 

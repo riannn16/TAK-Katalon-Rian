@@ -51,7 +51,7 @@
       <name>facility</name>
    </variable>
    <variable>
-      <defaultValue>'30/08/2024'</defaultValue>
+      <defaultValue>'30/09/2024'</defaultValue>
       <description></description>
       <id>6ea9e41c-abb5-45c6-a0bb-b6475b10589d</id>
       <masked>false</masked>
@@ -65,10 +65,10 @@
       <name>comment</name>
    </variable>
    <variable>
-      <defaultValue>'Medicare'</defaultValue>
+      <defaultValue>'Medicaid'</defaultValue>
       <description></description>
       <id>badb6b0b-08b5-46a3-82c8-2f566ec7acf4</id>
       <masked>false</masked>
-      <name>healthcare_program</name>
+      <name>program</name>
    </variable>
 </TestCaseEntity>

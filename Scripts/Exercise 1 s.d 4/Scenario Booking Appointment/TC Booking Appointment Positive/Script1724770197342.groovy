@@ -31,7 +31,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/a_login'))
 
-WebUI.verifyElementPresent(findTestObject('Record Web Exercise 1 s.d 4/Page_Login/label_login'), 0)
+CustomKeywords.'verify.verificationLoginPage.verifyLoginPage'()
 
 WebUI.setText(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Login/input_username'), 'John Doe')
 
@@ -49,37 +49,43 @@ WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise
 WebUI.selectOptionByValue(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/dropdown_facility'), 
     facility, true)
 
-//WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/checkbox_readmission'))
+//WebUI.check(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/checkbox_readmission'))
 'Step 16'
 if (hospital_readmission == true) {
-    WebUI.check(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/checkbox_readmission'))
+    WebUI.click(findTestObject('Record Web Exercise 1 s.d 4/Page_Booking-Appointment/checkbox_readmission'))
 }
 
-'Step 17'
 //WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_medicare'))
+'Step 17'
 def select_radio = program
+
 switch (select_radio) {
-	case select_radio = 'Madicare':
-		printIn(select_radio)
-		WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_medicare'))
-		
-		break
-	case select_radio = 'Madicaid':
-		printIn(select_radio)
-		WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_medicaid'))
-		
-		break
-		case select_radio = 'None':
-			printIn(select_radio)
-			WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_none'))
-}
+    case select_radio = 'Medicare':
+        //printIn(select_radio)
+        WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_medicare'))
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/textbox_visit-date'))
+        break
+    case select_radio = 'Medicaid':
+        //printIn(select_radio)
+        WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_medicaid'))
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/date_30'))
+        break
+    case select_radio = 'None':
+        //printIn(select_radio)
+        WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_none'))
+
+        break
+    default:
+        select_radio
+
+        WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_none'))}
+
+WebUI.click(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-date'))
+
+WebUI.click(findTestObject('Record Web Exercise 1 s.d 4/Page_Booking-Appointment/date-30'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.setText(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/textbox_comment'), 
-    'testing')
+    comment)
 
 WebUI.delay(2)
 
@@ -87,23 +93,48 @@ WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_B
 
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_appointment-confirmation'), 
-    0)
+CustomKeywords.'verify.verificationAppointmentPage.verifyAppontmentPage'()
 
 WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-facility'), 
     facility)
 
 //WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_yes_no'), hospital_readmission)
-'Step 26'
+'Step 27'
 if (hospital_readmission == true) {
     WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_yes_no'), 'Yes')
 } else {
     WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_yes_no'), 'No')
 }
 
-WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-program'), healthcare_program)
+//WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-program'), program)
+'Step 29'
+switch (select_radio) {
+    case select_radio = 'Medicare':
+        //printIn(select_radio)
+        WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-program'), 
+            'Medicare')
 
-WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-date'), visit_date)
+        break
+    case select_radio = 'Medicaid':
+        //printIn(select_radio)
+        WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-program'), 
+            'Medicaid')
+
+        break
+    case select_radio = 'None':
+        //printIn(select_radio)
+        WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-program'), 
+            'None')
+
+        break
+    default:
+        WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-program'), 
+            'None')
+
+        break
+}
+
+WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_visit-date'), visit_date)
 
 WebUI.verifyElementText(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-comment'), comment)
 

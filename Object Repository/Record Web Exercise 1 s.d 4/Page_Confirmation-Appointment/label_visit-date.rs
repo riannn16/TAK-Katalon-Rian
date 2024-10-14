@@ -3,22 +3,22 @@
    <description></description>
    <name>label_visit-date</name>
    <tag></tag>
-   <elementGuidId>5579368e-033e-4240-b7a0-955f6a96c8be</elementGuidId>
+   <elementGuidId>4ff0d2ae-bc0e-466e-867e-88eee912159f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//section[@id='summary']/div/div/div[5]/div</value>
+         <key>CSS</key>
+         <value>#visit_date</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//p[@id='visit_date']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
    <smartLocatorCollection>
       <entry>
          <key>SMART_LOCATOR</key>
-         <value>div >> internal:has-text=&quot;Visit Date&quot;i >> nth=3</value>
+         <value>internal:text=&quot;30/09/2024&quot;i</value>
       </entry>
    </smartLocatorCollection>
    <smartLocatorEnabled>false</smartLocatorEnabled>
@@ -28,85 +28,103 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>div</value>
-      <webElementGuid>d8bba7f4-e783-4ebe-9353-4d717b3017f1</webElementGuid>
+      <value>p</value>
+      <webElementGuid>f66067fa-d722-402a-bdad-0c8b4e631e0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>id</name>
       <type>Main</type>
-      <value>col-xs-4</value>
-      <webElementGuid>b764c853-6115-4cdd-94b2-8e7c91a82e66</webElementGuid>
+      <value>visit_date</value>
+      <webElementGuid>e88c4bf1-9928-4753-8c5b-b01b672809e0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>
-                    Visit Date
-                </value>
-      <webElementGuid>fc8bcf0f-485b-47a7-90e4-9cdfe63912cc</webElementGuid>
+      <value>30/09/2024</value>
+      <webElementGuid>019c1449-29eb-4859-8882-0bd7530050f9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;summary&quot;)/div[@class=&quot;container&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;col-xs-offset-2 col-xs-8&quot;]/div[@class=&quot;col-xs-4&quot;]</value>
-      <webElementGuid>68500871-b2db-41f0-8c3f-eb1accf527ef</webElementGuid>
+      <value>id(&quot;visit_date&quot;)</value>
+      <webElementGuid>2ce4a8f7-f7b9-4df7-92bb-6fa4c7e8f30c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//p[@id='visit_date']</value>
+      <webElementGuid>5b53472e-3f5d-47da-8fa7-7b6525c2af5f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//section[@id='summary']/div/div/div[5]/div</value>
-      <webElementGuid>a83c72a5-84a7-48f6-a03a-77678d9d7295</webElementGuid>
+      <value>//section[@id='summary']/div/div/div[5]/div[2]/p</value>
+      <webElementGuid>53af51cd-3bde-45f3-a5ad-4f0a4e545d1f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Healthcare Program'])[1]/following::div[3]</value>
-      <webElementGuid>c8f607dc-e5e5-414b-b9bb-014ac76ab105</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Visit Date'])[1]/following::p[1]</value>
+      <webElementGuid>f4e744a0-3346-4b4b-b39b-a1505f5cf666</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Apply for hospital readmission'])[1]/following::div[6]</value>
-      <webElementGuid>ebcd711c-7ce3-4df8-b433-7c35dde82b03</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Healthcare Program'])[1]/following::p[2]</value>
+      <webElementGuid>b457cb0e-27e4-4c33-bc5d-aa75639471c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Comment'])[1]/preceding::div[2]</value>
-      <webElementGuid>c82f4ff0-07cb-462b-a920-8b7b45907c98</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Comment'])[1]/preceding::p[1]</value>
+      <webElementGuid>de2df767-4246-4e17-b8a4-91585903a95f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Go to Homepage'])[1]/preceding::p[2]</value>
+      <webElementGuid>93e22091-a8f4-4ea7-9ea3-4d4ae9698af2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='30/09/2024']/parent::*</value>
+      <webElementGuid>e02e4a93-37a8-4b5d-ba9c-404dda6ce55f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[5]/div</value>
-      <webElementGuid>074b0eb5-8428-4996-a66f-73967b634f6b</webElementGuid>
+      <value>//div[5]/div[2]/p</value>
+      <webElementGuid>3111d118-8276-4b46-a3b9-2caf729bdba8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = '
-                    Visit Date
-                ' or . = '
-                    Visit Date
-                ')]</value>
-      <webElementGuid>8fb0f8c8-b81e-4868-ac19-12e813258be0</webElementGuid>
+      <value>//p[@id = 'visit_date' and (text() = '30/09/2024' or . = '30/09/2024')]</value>
+      <webElementGuid>00e9d1cd-ade4-49d8-bd89-b776485319c6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

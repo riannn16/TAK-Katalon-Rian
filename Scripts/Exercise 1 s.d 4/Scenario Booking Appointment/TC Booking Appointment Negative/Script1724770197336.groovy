@@ -54,7 +54,9 @@ WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_B
 
 WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/radiobutton_medicare'))
 
-WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/textbox_visit-date'))
+WebUI.click(findTestObject('Record Web Exercise 1 s.d 4/Page_Confirmation-Appointment/label_isi-date'))
+
+WebUI.click(findTestObject('Record Web Exercise 1 s.d 4/Page_Booking-Appointment/date-30'))
 
 WebUI.click(findTestObject('Object Repository/Record Web Exercise 1 s.d 4/Page_Booking-Appointment/button_book-appointment'))
 
